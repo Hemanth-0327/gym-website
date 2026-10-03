@@ -1,0 +1,403 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PULSE FIT | Gym & Workout Hub</title>
+    <link rel="stylesheet" href="index1.css">
+</head>
+<body>
+
+    <!-- Navigation -->
+    <header>
+        <nav class="navbar">
+            <ul class="nav-links"> 
+                <li><a href="#home">Home</a></li>
+                <li><a href="#workouts">Workouts</a></li>
+                <li><a href="#plans">Plans</a></li>
+                <li><a href="#contact" class="btn-nav">Join Now</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <h1>PUSH YOUR <span>LIMITS</span></h1>
+            <p>Discover targeted workouts, expert techniques, and transform your fitness journey today.</p>
+            <a href="#workouts" class="btn-primary">Explore Workouts</a>
+        </div>
+    </section>
+
+    <!-- Workouts Section -->
+    <section id="workouts" class="workouts-section">
+        <div class="section-title">
+            <h2>FEATURED <span>WORKOUTS</span></h2>
+            <p>Select a muscle group to filter exercises</p>
+        </div>
+
+        <!-- Filter Buttons -->
+        <div class="filter-buttons">
+            <button class="filter-btn active" onclick="filterSelection('all')">All</button>
+            <button class="filter-btn" onclick="filterSelection('chest')">Chest</button>
+            <button class="filter-btn" onclick="filterSelection('back')">Back</button>
+            <button class="filter-btn" onclick="filterSelection('biceps')">Biceps</button>
+            <button class="filter-btn" onclick="filterSelection('triceps')">Triceps</button>
+            <button class="filter-btn" onclick="filterSelection('forearms')">Forearms</button>
+            <button class="filter-btn" onclick="filterSelection('legs')">Legs</button>
+            <button class="filter-btn" onclick="filterSelection('abs')">Abs</button>
+        </div>
+
+        <!-- Workout Cards Grid -->
+        <div class="workout-grid">
+            
+            <!-- ================= CHEST WORKOUTS ================= -->
+            <div class="workout-card chest">
+                <div class="card-image">
+                    <img src="C:\Users\Hemanth\OneDrive\Desktop\gym pics web\benchpress.webp" alt="Bench Press">
+                    <span class="badge">Chest</span>
+                </div>
+                <div class="card-content">
+                    <h3>Barbell Bench Press</h3>
+                    <p>Build chest strength and upper body muscle density.</p>
+                    <div class="workout-meta">
+                        <span><strong>Sets:</strong> 4</span>
+                        <span><strong>Reps:</strong> 8-12</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="workout-card chest">
+                <div class="card-image">
+                    <img src="C:\Users\Hemanth\OneDrive\Desktop\gym pics web\Incline Dumbbell Press"alt="Incline Dumbbell Press">
+                    <span class="badge">Chest</span>
+                </div>
+                <div class="card-content">
+                    <h3>Incline Dumbbell Press</h3>
+                    <p>Builds upper chest fibers and enhances overall chest shape.</p>
+                    <div class="workout-meta">
+                        <span><strong>Sets:</strong> 4</span>
+                        <span><strong>Reps:</strong> 10-12</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="workout-card chest">
+                <div class="card-image">
+                    <img src="C:\Users\Hemanth\OneDrive\Desktop\gym pics web\cable cross over1.jpg" alt="Cable Crossover">
+                    <span class="badge">Chest</span>
+                </div>
+                <div class="card-content">
+                    <h3>Cable Crossover Flyes</h3>
+                    <p>Maintains continuous tension to maximize chest isolation.</p>
+                    <div class="workout-meta">
+                        <span><strong>Sets:</strong> 3</span>
+                        <span><strong>Reps:</strong> 12-15</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="workout-card chest">
+                <div class="card-image">
+                    <img src="C:\Users\Hemanth\OneDrive\Desktop\gym pics web\dips" alt="Chest Dips">
+                    <span class="badge">Chest</span>
+                </div>
+                <div class="card-content">
+                    <h3>Chest Dips</h3>
+                    <p>Targets lower chest and triceps using bodyweight resistance.</p>
+                    <div class="workout-meta">
+                        <span><strong>Sets:</strong> 3</span>
+                        <span><strong>Reps:</strong> 8-12</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- ================= BACK WORKOUTS ================= -->
+            <div class="workout-card back">
+                <div class="card-image">
+                    <img src="C:\Users\Hemanth\OneDrive\Desktop\gym pics web\deadlift.webp" alt="Deadlift">
+                    <span class="badge">Back</span>
+                </div>
+                <div class="card-content">
+                    <h3>Conventional Deadlift</h3>
+                    <p>Develop full posterior chain strength and back thickness.</p>
+                    <div class="workout-meta">
+                        <span><strong>Sets:</strong> 3</span>
+                        <span><strong>Reps:</strong> 5-8</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="workout-card back">
+                <div class="card-image">
+                    <img src="C:\Users\Hemanth\OneDrive\Desktop\gym pics web\lats.webp" alt="Lat Pulldown">
+                    <span class="badge">Back</span>
+                </div>
+                <div class="card-content">
+                    <h3>Lat Pulldown</h3>
+                    <p>Builds upper back width for a solid V-taper frame.</p>
+                    <div class="workout-meta">
+                        <span><strong>Sets:</strong> 4</span>
+                        <span><strong>Reps:</strong> 10-12</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="workout-card back">
+                <div class="card-image">
+                    <img src="C:\Users\Hemanth\OneDrive\Desktop\gym pics web\rows.webp" alt="Bent Over Row">
+                    <span class="badge">Back</span>
+                </div>
+                <div class="card-content">
+                    <h3>Bent-Over Barbell Row</h3>
+                    <p>Increases mid-back muscle density, rhomboids, and lats.</p>
+                    <div class="workout-meta">
+                        <span><strong>Sets:</strong> 4</span>
+                        <span><strong>Reps:</strong> 8-10</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="workout-card back">
+                <div class="card-image">
+                    <img src="C:\Users\Hemanth\OneDrive\Desktop\gym pics web\Seated_Row_500x.webp" alt="Seated Cable Row">
+                    <span class="badge">Back</span>
+                </div>
+                <div class="card-content">
+                    <h3>Seated Cable Row</h3>
+                    <p>Improves posture and builds thickness across the middle back.</p>
+                    <div class="workout-meta">
+                        <span><strong>Sets:</strong> 3</span>
+                        <span><strong>Reps:</strong> 12-15</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- ================= BICEPS WORKOUTS ================= -->
+            <div class="workout-card biceps arms">
+                <div class="card-image">
+                    <img src="C:\Users\Hemanth\OneDrive\Desktop\gym pics web\bizepscurls.webp" alt="Bicep Curls">
+                    <span class="badge">Biceps</span>
+                </div>
+                <div class="card-content">
+                    <h3>Dumbbell Bicep Curls</h3>
+                    <p>Isolate and grow your biceps with controlled form.</p>
+                    <div class="workout-meta">
+                        <span><strong>Sets:</strong> 3</span>
+                        <span><strong>Reps:</strong> 12-15</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="workout-card biceps arms">
+                <div class="card-image">
+                    <img src="C:\Users\Hemanth\OneDrive\Desktop\gym pics web\hammer curls" alt="Hammer Curls">
+                    <span class="badge">Biceps</span>
+                </div>
+                <div class="card-content">
+                    <h3>Dumbbell Hammer Curls</h3>
+                    <p>Targets the brachialis muscle for overall arm thickness.</p>
+                    <div class="workout-meta">
+                        <span><strong>Sets:</strong> 3</span>
+                        <span><strong>Reps:</strong> 12-15</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="workout-card biceps arms">
+                <div class="card-image">
+                    <img src="C:\Users\Hemanth\OneDrive\Desktop\gym pics web\lever-preacher-curl.webp" alt="Preacher Curls">
+                    <span class="badge">Biceps</span>
+                </div>
+                <div class="card-content">
+                    <h3>EZ-Bar Preacher Curls</h3>
+                    <p>Isolates bicep peaks by eliminating cheating and momentum.</p>
+                    <div class="workout-meta">
+                        <span><strong>Sets:</strong> 3</span>
+                        <span><strong>Reps:</strong> 10-12</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- ================= TRICEPS WORKOUTS ================= -->
+            <div class="workout-card triceps arms">
+                <div class="card-image">
+                    <img src="C:\Users\Hemanth\OneDrive\Desktop\gym pics web\triceps.webp"alt="Tricep Rope Pushdown">
+                    <span class="badge">Triceps</span>
+                </div>
+                <div class="card-content">
+                    <h3>Tricep Rope Pushdowns</h3>
+                    <p>Isolates the lateral and medial heads of the triceps for upper arm horseshoe definition.</p>
+                    <div class="workout-meta">
+                        <span><strong>Sets:</strong> 3</span>
+                        <span><strong>Reps:</strong> 12-15</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="workout-card triceps arms">
+                <div class="card-image">
+                    <img src="C:\Users\Hemanth\OneDrive\Desktop\gym pics web\skull" alt="Skull Crushers">
+                    <span class="badge">Triceps</span>
+                </div>
+                <div class="card-content">
+                    <h3>EZ-Bar Skull Crushers</h3>
+                    <p>Targets the long head of the triceps through maximum stretch and mechanical tension.</p>
+                    <div class="workout-meta">
+                        <span><strong>Sets:</strong> 3</span>
+                        <span><strong>Reps:</strong> 10-12</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- ================= FOREARMS WORKOUTS ================= -->
+            <div class="workout-card forearms arms">
+                <div class="card-image">
+                    <img src="C:\Users\Hemanth\OneDrive\Desktop\gym pics web\4arms" alt="Barbell Wrist Curls">
+                    <span class="badge">Forearms</span>
+                </div>
+                <div class="card-content">
+                    <h3>Barbell Wrist Curls</h3>
+                    <p>Strengthens forearm flexors and improves grip power for heavy lifts.</p>
+                    <div class="workout-meta">
+                        <span><strong>Sets:</strong> 3</span>
+                        <span><strong>Reps:</strong> 15-20</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="workout-card forearms arms">
+                <div class="card-image">
+                    <img src="C:\Users\Hemanth\OneDrive\Desktop\gym pics web\r curls"alt="Reverse Barbell Curls">
+                    <span class="badge">Forearms</span>
+                </div>
+                <div class="card-content">
+                    <h3>Reverse Barbell Curls</h3>
+                    <p>Builds the brachioradialis muscle on top of the forearm and outer arm.</p>
+                    <div class="workout-meta">
+                        <span><strong>Sets:</strong> 3</span>
+                        <span><strong>Reps:</strong> 12-15</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- ================= LEGS WORKOUTS ================= -->
+            <div class="workout-card legs">
+                <div class="card-image">
+                    <img src="C:\Users\Hemanth\OneDrive\Desktop\gym pics web\barble squart.webp" alt="Barbell Squat">
+                    <span class="badge">Legs</span>
+                </div>
+                <div class="card-content">
+                    <h3>Barbell Back Squat</h3>
+                    <p>The ultimate leg builder targeting quadriceps, glutes, and core.</p>
+                    <div class="workout-meta">
+                        <span><strong>Sets:</strong> 4</span>
+                        <span><strong>Reps:</strong> 10-12</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="workout-card legs">
+                <div class="card-image">
+                    <img src="C:\Users\Hemanth\OneDrive\Desktop\gym pics web\sled-45-leg-press.webp" alt="Leg Press">
+                    <span class="badge">Legs</span>
+                </div>
+                <div class="card-content">
+                    <h3>45-Degree Leg Press</h3>
+                    <p>Builds quadriceps strength safely with reduced spine loading.</p>
+                    <div class="workout-meta">
+                        <span><strong>Sets:</strong> 4</span>
+                        <span><strong>Reps:</strong> 12-15</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="workout-card legs">
+                <div class="card-image">
+                    <img src="C:\Users\Hemanth\OneDrive\Desktop\gym pics web\hamstrings" alt="Romanian Deadlift">
+                    <span class="badge">Legs</span>
+                </div>
+                <div class="card-content">
+                    <h3>Dumbbell Romanian Deadlift</h3>
+                    <p>Stretches and strengthens the hamstrings and glutes.</p>
+                    <div class="workout-meta">
+                        <span><strong>Sets:</strong> 3</span>
+                        <span><strong>Reps:</strong> 10-12</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="workout-card legs">
+                <div class="card-image">
+                    <img src="C:\Users\Hemanth\OneDrive\Desktop\gym pics web\Lunges" alt="Walking Lunges">
+                    <span class="badge">Legs</span>
+                </div>
+                <div class="card-content">
+                    <h3>Dumbbell Walking Lunges</h3>
+                    <p>Improves leg balance, quad strength, and glute activation.</p>
+                    <div class="workout-meta">
+                        <span><strong>Sets:</strong> 3</span>
+                        <span><strong>Reps:</strong> 12 per leg</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- ================= ABS / CORE WORKOUTS ================= -->
+            <div class="workout-card abs">
+                <div class="card-image">
+                    <img src="C:\Users\Hemanth\OneDrive\Desktop\gym pics web\abs" alt="Hanging Leg Raises">
+                    <span class="badge">Abs</span>
+                </div>
+                <div class="card-content">
+                    <h3>Hanging Leg Raises</h3>
+                    <p>Builds lower abdominal definition and core anti-extension strength.</p>
+                    <div class="workout-meta">
+                        <span><strong>Sets:</strong> 3</span>
+                        <span><strong>Reps:</strong> 12-15</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="workout-card abs">
+                <div class="card-image">
+                    <img src="C:\Users\Hemanth\OneDrive\Desktop\gym pics web\kabelzugcrunches.webp"alt="Cable Crunches">
+                    <span class="badge">Abs</span>
+                </div>
+                <div class="card-content">
+                    <h3>Kneeling Cable Crunches</h3>
+                    <p>Applies progressive resistance to build thick, prominent abdominal block wall strength.</p>
+                    <div class="workout-meta">
+                        <span><strong>Sets:</strong> 4</span>
+                        <span><strong>Reps:</strong> 15-20</span>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- Interactive Filter Script -->
+    <script>
+        function filterSelection(category) {
+            let cards = document.getElementsByClassName("workout-card");
+            let buttons = document.getElementsByClassName("filter-btn");
+
+            // Update active button state
+            for (let btn of buttons) {
+                btn.classList.remove("active");
+            }
+            event.currentTarget.classList.add("active");
+
+            // Show or hide cards based on category
+            for (let card of cards) {
+                if (category === "all" || card.classList.contains(category)) {
+                    card.style.display = "block";
+                } else {
+                    card.style.display = "none";
+                }
+            }
+        }
+    </script>
+
+</body>
+</html>
